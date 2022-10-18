@@ -6,12 +6,10 @@ import ViewNews from "./components/ViewNews";
 function App() {
     return (
         <>
-            <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<News/>}/>
                     <Route path={"/news/:id"} element={<ViewNews/>}/>
                 </Routes>
-            </BrowserRouter>
         </>
     );
 }

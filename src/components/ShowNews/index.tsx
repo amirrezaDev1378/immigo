@@ -25,7 +25,7 @@ interface Types {
 const ShowNews: FC<Types> = ({data}) => {
     const {id, title, url, content_html, summary, image, date_published, author, tags} = data;
     return (
-        <Grid justifyContent={"center"}  container item md={3} className={styles.newsItem}>
+        <Grid justifyContent={"center"}  container item md={3} className={`my-3 ${styles.newsItem}`}>
             <LikeButton id={id} />
 
             <Typography variant={"h6"}>{title}</Typography>
