@@ -1,0 +1,15 @@
+.newsItem {
+  padding: 20px;
+  border: #704cb6 3px solid;
+  transition: 0.4s all ease-in-out;
+  display: flex;
+}
+
+.newsItem:hover {
+  transform: scale(1.05);
+}
+
+.image img {
+  width: 200px;
+  height: auto;
+}
