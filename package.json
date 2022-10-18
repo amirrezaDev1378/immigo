@@ -36,9 +36,11 @@
   "scripts": {
     "start": "set HTTPS=true&&react-scripts start",
     "start-http": "react-scripts start",
-    "build": "react-scripts build && serve -s build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "serve": "serve -s build",
+    "server-start": "cd ./dummyProxy && yarn start",
+    "install": "yarn install && cd ./dummyProxy && yarn install"
   },
   "eslintConfig": {
     "extends": [
