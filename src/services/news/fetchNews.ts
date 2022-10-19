@@ -4,7 +4,7 @@ import {savedNews, saveNews} from "../../helpers/localStorage";
 import {isOffline} from "../../helpers/network";
 
 export const FetchNews = () => {
-    const {data, error} = useSWR(`http://${process.env.REACT_APP_NEWS_SERVER}`, fetcher, {
+    const {data, error} = useSWR(`https://${process.env.REACT_APP_NEWS_SERVER}`, fetcher, {
         refreshInterval: 30000,
         revalidateOnReconnect: true,
         errorRetryInterval: 30000,
